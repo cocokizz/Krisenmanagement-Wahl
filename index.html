@@ -219,6 +219,27 @@
             gap: 2rem;
             margin-top: 3rem;
         }
+        
+        /* --- Video Placeholder Styling --- */
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 640px; /* Standardbreite für Web-Videos */
+            margin: 3rem auto;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            background-color: #000;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
         /* --- Scroll Animation --- */
         .reveal {
@@ -325,6 +346,14 @@
                     <h2>Krisensimulation: Deutschlandweiter Internetausfall</h2>
                     <p><strong>Szenario:</strong> Digitale Dienste sind lahmgelegt. Online-Terminbuchungen, Connected-Drive-Dienste und die Webseite sind nicht erreichbar. Ein "Shitstorm" beginnt.</p>
                 </div>
+
+                <div class="video-container">
+                    <video controls>
+                        <source src="Crisis_Comms__The_Social_Media_Playbook.mp4" type="video/mp4">
+                        Ihr Browser unterstützt das Video-Tag nicht.
+                    </video>
+                </div>
+
                 <div class="card" style="margin-top: 3rem;">
                     <h3>Der 3-Schritte-Plan zur Bewältigung der Krise</h3>
                     <ol>
